@@ -1,3 +1,8 @@
+! Title: NaW's List
+! Description: Personal uBlock Origin List
+! Expires: 30 days
+! Last modified: 2026.04.12
+!
 ! Chặn google search dịch kết quả tìm kiếm
 ! https://voz.vn/t/tong-hop-nhung-addon-chat-cho-firefox-chromium.682181/post-35907919
 www.google.com##.Pa9Ggf:not([style="display:none"])
