@@ -1,0 +1,17 @@
+! Chặn google search dịch kết quả tìm kiếm
+! https://voz.vn/t/tong-hop-nhung-addon-chat-cho-firefox-chromium.682181/post-35907919
+www.google.com##.Pa9Ggf:not([style="display:none"])
+www.google.com##.Pa9Ggf[style="display:none"]:style(display: block !important;)
+www.google.com##a[jsname="UWckNb"][data-tli][href^="https://translate.google.com/translate?"]
+www.google.com##a[jsname="UWckNb"][data-tli][style="display:none"]:style(display: block !important;)
+www.google.com##div[jscontroller="Vxh2ib"]
+
+!Xóa bản dịch reddit
+||reddit.com^$removeparam=tl 
+
+! lenso.ai
+lenso.ai##+js(trusted-set-cookie, facial_search_consent, true)
+lenso.ai##+js(trusted-set-cookie, search_consent, true)
+lenso.ai##.title-container.locked:remove-class(locked)
+lenso.ai##.search-results-list.locked:remove-class(locked)
+lenso.ai##.search-results-list .overlay:remove()
