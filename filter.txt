@@ -20,3 +20,7 @@ lenso.ai##+js(trusted-set-cookie, search_consent, true)
 lenso.ai##.title-container.locked:remove-class(locked)
 lenso.ai##.search-results-list.locked:remove-class(locked)
 lenso.ai##.search-results-list .overlay:remove()
+
+! facebook.com
+!! prevent auto refresh
+!facebook.com##+js(aeld, /blur|focus|afterblur|mousemove|visibilitychange/)
